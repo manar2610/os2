@@ -15,3 +15,10 @@ jobs:
          run: pwd
        - name: "printing name"
          run: echo manar
+
+       - name: "printing files before"
+         run: ls
+       - uses: actions/checkout@v3
+
+       - name: "printing files after"
+         run: ls
